@@ -42,7 +42,7 @@ jobs:
           today = datetime.now().strftime("%d %b %Y")
           report_lines = []
           report_lines.append(f"# 🚀 Daily SEO & Ads Fleet Report — {today}\n")
-          report_lines.append("> Automated Daily 08:00 AM IST Cloud Audit for **Shahrukh Ummati** (`summati@zohomail.in`)\n")
+          report_lines.append("> Automated Daily 08:00 AM IST Cloud Audit for **Shahrukh Ummati** (`summati@zohomail.in`) — cc @summati\n")
           report_lines.append("## 🌐 Website Live Health & Latency\n")
           report_lines.append("| Website | HTTP Status | Response Time | Monetization / Ads | Primary Keyword Target |")
           report_lines.append("|---|---|---|---|---|")
