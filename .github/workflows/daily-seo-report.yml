@@ -34,7 +34,7 @@ jobs:
           sites = [
               {"name": "Minimalist Quran", "url": "https://al-quraan.web.app/robots.txt", "ad": "Google AdSense (Auto Ads ON)", "kw": "quran app offline no ads, urdu audio"},
               {"name": "Satta Global", "url": "https://satta-global.netlify.app/sitemap.xml", "ad": "Adsterra 728x90 Live", "kw": "satta global live, desawar chart 2026"},
-              {"name": "AgraShoes B2B", "url": "https://karakorum.onrender.com/sitemap.xml", "ad": "Direct B2B WhatsApp Leads", "kw": "wholesale leather shoes agra, OEM shoes"},
+              {"name": "AgraShoes B2B", "url": "https://karakorum.onrender.com/", "ad": "Direct B2B WhatsApp Leads", "kw": "wholesale leather shoes agra, OEM shoes"},
               {"name": "Expedition Saga", "url": "https://expeditionsaga.pages.dev/robots.txt", "ad": "Private Tour WhatsApp Bookings", "kw": "sunrise taj mahal tour delhi"},
               {"name": "Karakorum Studio", "url": "https://karakorum-io.netlify.app/", "ad": "AI Client Inquiries", "kw": "ai development studio india"}
           ]
@@ -54,7 +54,7 @@ jobs:
               latency = "--"
               try:
                   req = urllib.request.Request(s["url"], headers={'User-Agent': 'Mozilla/5.0 (Antigravity-Fleet-Bot)'})
-                  with urllib.request.urlopen(req, timeout=35) as response:
+                  with urllib.request.urlopen(req, timeout=50) as response:
                       latency = f"{round((time.time() - start) * 1000)} ms"
                       if response.status == 200:
                           status = "200 OK 🟢"
