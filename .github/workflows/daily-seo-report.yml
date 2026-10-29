@@ -1,0 +1,88 @@
+name: Daily SEO & Ads Fleet Report
+
+on:
+  schedule:
+    # 02:30 UTC = 08:00 AM IST (Indian Standard Time) Every Day
+    - cron: '30 2 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI anytime
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Fleet Health & SEO Check
+        id: check
+        run: |
+          python3 - << 'EOF'
+          import urllib.request
+          import time
+          from datetime import datetime
+
+          sites = [
+              {"name": "Minimalist Quran", "url": "https://al-quraan.web.app/robots.txt", "ad": "Google AdSense (Auto Ads ON)", "kw": "quran app offline no ads, urdu audio"},
+              {"name": "Satta Global", "url": "https://satta-global.netlify.app/sitemap.xml", "ad": "Adsterra 728x90 Live", "kw": "satta global live, desawar chart 2026"},
+              {"name": "AgraShoes B2B", "url": "https://karakorum.onrender.com/sitemap.xml", "ad": "Direct B2B WhatsApp Leads", "kw": "wholesale leather shoes agra, OEM shoes"},
+              {"name": "Expedition Saga", "url": "https://expeditionsaga.pages.dev/robots.txt", "ad": "Private Tour WhatsApp Bookings", "kw": "sunrise taj mahal tour delhi"},
+              {"name": "Karakorum Studio", "url": "https://karakorum-io.netlify.app/", "ad": "AI Client Inquiries", "kw": "ai development studio india"}
+          ]
+
+          today = datetime.now().strftime("%d %b %Y")
+          report_lines = []
+          report_lines.append(f"# 🚀 Daily SEO & Ads Fleet Report — {today}\n")
+          report_lines.append("> Automated Daily 08:00 AM IST Cloud Audit for **Shahrukh Ummati** (`summati@zohomail.in`)\n")
+          report_lines.append("## 🌐 Website Live Health & Latency\n")
+          report_lines.append("| Website | HTTP Status | Response Time | Monetization / Ads | Primary Keyword Target |")
+          report_lines.append("|---|---|---|---|---|")
+
+          all_up = True
+          for s in sites:
+              start = time.time()
+              status = "DOWN 🔴"
+              latency = "--"
+              try:
+                  req = urllib.request.Request(s["url"], headers={'User-Agent': 'Mozilla/5.0 (Antigravity-Fleet-Bot)'})
+                  with urllib.request.urlopen(req, timeout=12) as response:
+                      latency = f"{round((time.time() - start) * 1000)} ms"
+                      if response.status == 200:
+                          status = "200 OK 🟢"
+                      else:
+                          status = f"{response.status} 🟡"
+              except Exception as e:
+                  all_up = False
+                  status = "TIMEOUT / ERR 🔴"
+
+              report_lines.append(f"| **{s['name']}** | {status} | `{latency}` | {s['ad']} | `{s['kw']}` |")
+
+          report_lines.append("\n---\n")
+          report_lines.append("## 📊 Actionable Insights for Today")
+          report_lines.append("1. **Google AdSense:** Check [AdSense Reporting](https://adsense.google.com/adsense/u/0/home/reporting) for yesterday's eCPM on Minimalist Quran.")
+          report_lines.append("2. **Adsterra:** Check [Adsterra Publisher Dashboard](https://beta.publishers.adsterra.com/dashboard) for USD ($) ad revenue on Satta Global.")
+          report_lines.append("3. **Google Search Console:** Submit any new blog posts or check crawl status on [Search Console](https://search.google.com/search-console).")
+          report_lines.append("4. **WhatsApp Leads:** Check inquiries on `+91 9873801605` for Agra wholesale shoe quotes or Taj Mahal tours.")
+          report_lines.append("\n*Generated automatically by 24/7 GitHub Actions Cron (`30 2 * * *`).*")
+
+          body = "\n".join(report_lines)
+          with open("report_body.md", "w") as f:
+              f.write(body)
+          EOF
+
+      - name: Send Report Directly to Email via GitHub Issue Notification
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE_STR=$(date -u +"%d %b %Y")
+          TITLE="[Daily Fleet Report] $DATE_STR — SEO & Ads Progress"
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "$TITLE" --body-file report_body.md --label "daily-report"
