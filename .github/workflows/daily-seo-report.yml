@@ -33,10 +33,10 @@ jobs:
 
           sites = [
               {"name": "Minimalist Quran", "url": "https://al-quraan.web.app/robots.txt", "ad": "Google AdSense (Auto Ads ON)", "kw": "quran app offline no ads, urdu audio"},
-              {"name": "Satta Global", "url": "https://satta-global.netlify.app/sitemap.xml", "ad": "Adsterra 728x90 Live", "kw": "satta global live, desawar chart 2026"},
-              {"name": "AgraShoes B2B", "url": "https://karakorum.onrender.com/", "ad": "Direct B2B WhatsApp Leads", "kw": "wholesale leather shoes agra, OEM shoes"},
-              {"name": "Expedition Saga", "url": "https://expeditionsaga.pages.dev/robots.txt", "ad": "Private Tour WhatsApp Bookings", "kw": "sunrise taj mahal tour delhi"},
-              {"name": "Karakorum Studio", "url": "https://karakorum-io.netlify.app/", "ad": "AI Client Inquiries", "kw": "ai development studio india"}
+              {"name": "Satta Global", "url": "https://satta-global.netlify.app/sitemap.xml", "ad": "Display Ads / Adsterra Live", "kw": "satta global live, desawar chart 2026"},
+              {"name": "Karakorum Compression Engine", "url": "https://karakorum.onrender.com/robots.txt", "ad": "Google AdSense Active (Go CLI)", "kw": "online file compressor free, lossless compression"},
+              {"name": "TajMahal.City", "url": "http://tajmahal.city/robots.txt", "ad": "Direct Foreign Tour Bookings (WhatsApp)", "kw": "sunrise taj mahal tour delhi, no scam tour"},
+              {"name": "Karakorum Social", "url": "https://karakorum.pages.dev/robots.txt", "ad": "Instagram Retainers & ₹50 Guide Funnel", "kw": "instagram management packages, reels creation"}
           ]
 
           today = datetime.now().strftime("%d %b %Y")
