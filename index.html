@@ -153,6 +153,23 @@
     .site-row:hover { border-color: rgba(255, 255, 255, 0.2); }
     .site-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
     .site-title { font-size: 1.1rem; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 8px; }
+    .site-title a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s, transform 0.2s;
+    }
+    .site-title a:hover {
+      color: var(--cyan);
+      transform: translateX(2px);
+    }
+    .site-title a .ext-icon {
+      font-size: 0.8rem;
+      color: var(--cyan);
+      opacity: 0.8;
+    }
     
     .live-ping {
       font-family: 'JetBrains Mono', monospace;
@@ -425,7 +442,7 @@
           <div class="site-row">
             <div class="site-header">
               <div class="site-title">
-                1. Minimalist Quran
+                <a href="https://al-quraan.web.app/" target="_blank">1. Minimalist Quran <span class="ext-icon">↗</span></a>
                 <span class="live-ping" id="ping-quran">Ping: checking...</span>
               </div>
               <span class="badge badge-adsense">Google AdSense: Ready (Auto Ads ON)</span>
@@ -471,7 +488,7 @@
           <div class="site-row">
             <div class="site-header">
               <div class="site-title">
-                2. Satta Global NumberKing
+                <a href="https://satta-global.netlify.app/" target="_blank">2. Satta Global NumberKing <span class="ext-icon">↗</span></a>
                 <span class="live-ping" id="ping-satta">Ping: checking...</span>
               </div>
               <span class="badge badge-adsterra">Adsterra 728x90 Live</span>
@@ -517,7 +534,7 @@
           <div class="site-row">
             <div class="site-header">
               <div class="site-title">
-                3. Karakorum Compression Engine CLI
+                <a href="https://karakorum.onrender.com/" target="_blank">3. Karakorum Compression Engine CLI <span class="ext-icon">↗</span></a>
                 <span class="live-ping" id="ping-compression">Ping: checking...</span>
               </div>
               <span class="badge badge-b2b" style="background: rgba(37, 99, 235, 0.15); color: #3b82f6; border: 1px solid rgba(37, 99, 235, 0.3);">AdSense Active</span>
@@ -553,7 +570,7 @@
           <div class="site-row">
             <div class="site-header">
               <div class="site-title">
-                4. TajMahal.City Luxury Tours
+                <a href="https://tajmahal.city/" target="_blank">4. TajMahal.City Luxury Tours <span class="ext-icon">↗</span></a>
                 <span class="live-ping" id="ping-tajmahal">Ping: checking...</span>
               </div>
               <span class="badge" style="background: rgba(16, 185, 129, 0.15); color: var(--green); border: 1px solid rgba(16, 185, 129, 0.3);">GitHub Pages + Domain Live</span>
@@ -589,7 +606,7 @@
           <div class="site-row">
             <div class="site-header">
               <div class="site-title">
-                5. Karakorum Instagram & Social Growth
+                <a href="https://karakorum.pages.dev/" target="_blank">5. Karakorum Instagram & Social Growth <span class="ext-icon">↗</span></a>
                 <span class="live-ping" id="ping-karakorum">Ping: checking...</span>
               </div>
               <span class="badge badge-cyan" style="background: rgba(6, 182, 212, 0.15); color: var(--cyan); border: 1px solid rgba(6, 182, 212, 0.3);">Cloudflare Pages</span>
@@ -621,7 +638,7 @@
           <div class="site-row">
             <div class="site-header">
               <div class="site-title">
-                6. Golden Triangle Cabs (Intercity Taxi & Tours)
+                <a href="https://goldentrianglecabs.pages.dev/" target="_blank">6. Golden Triangle Cabs (Intercity Taxi & Tours) <span class="ext-icon">↗</span></a>
                 <span class="live-ping" id="ping-goldentriangle">Ping: checking...</span>
               </div>
               <span class="badge" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3);">Cloudflare Pages (39 Routes)</span>
@@ -670,6 +687,57 @@
         </div>
       </div>
 
+    </div>
+
+    <!-- 1-Click Direct Website Links Hub -->
+    <div class="portal-hub" style="margin-top: 24px; border-color: rgba(6, 182, 212, 0.25);">
+      <h2 style="font-size: 1.15rem; color: var(--cyan); display: flex; align-items: center; gap: 8px;">
+        🌐 Live Fleet Websites (1-Click Open All 6 Properties)
+      </h2>
+      <div class="portals-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <a href="https://tajmahal.city/" target="_blank" class="portal-link" style="border-left: 3px solid var(--green);">
+          <div>
+            <span style="display: flex; align-items: center; gap: 6px;">🏰 TajMahal.City</span>
+            <small>https://tajmahal.city (Luxury Tours & Concierge)</small>
+          </div>
+          <div>↗</div>
+        </a>
+        <a href="https://goldentrianglecabs.pages.dev/" target="_blank" class="portal-link" style="border-left: 3px solid #f59e0b;">
+          <div>
+            <span style="display: flex; align-items: center; gap: 6px;">🚕 Golden Triangle Cabs</span>
+            <small>https://goldentrianglecabs.pages.dev (39 Intercity Routes)</small>
+          </div>
+          <div>↗</div>
+        </a>
+        <a href="https://al-quraan.web.app/" target="_blank" class="portal-link" style="border-left: 3px solid var(--gold);">
+          <div>
+            <span style="display: flex; align-items: center; gap: 6px;">📖 Minimalist Quran</span>
+            <small>https://al-quraan.web.app (AdSense Auto Ads)</small>
+          </div>
+          <div>↗</div>
+        </a>
+        <a href="https://karakorum.pages.dev/" target="_blank" class="portal-link" style="border-left: 3px solid var(--cyan);">
+          <div>
+            <span style="display: flex; align-items: center; gap: 6px;">📈 Karakorum Social</span>
+            <small>https://karakorum.pages.dev (Growth Agency & Retainers)</small>
+          </div>
+          <div>↗</div>
+        </a>
+        <a href="https://satta-global.netlify.app/" target="_blank" class="portal-link" style="border-left: 3px solid #f43f5e;">
+          <div>
+            <span style="display: flex; align-items: center; gap: 6px;">🎲 Satta Global NumberKing</span>
+            <small>https://satta-global.netlify.app (Live Result Matrix)</small>
+          </div>
+          <div>↗</div>
+        </a>
+        <a href="https://karakorum.onrender.com/" target="_blank" class="portal-link" style="border-left: 3px solid #3b82f6;">
+          <div>
+            <span style="display: flex; align-items: center; gap: 6px;">🗜️ Karakorum Compression</span>
+            <small>https://karakorum.onrender.com (Lossless Go CLI Engine)</small>
+          </div>
+          <div>↗</div>
+        </a>
+      </div>
     </div>
 
     <!-- Direct Revenue & Payout Hub -->
