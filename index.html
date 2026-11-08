@@ -313,7 +313,7 @@
       <div class="tele-card tc-1">
         <div class="tele-title">Fleet HTTP Health</div>
         <div class="tele-val" id="stat-uptime">100%</div>
-        <div class="tele-sub"><span class="up-arrow">▲</span> All 5 edge clusters online</div>
+        <div class="tele-sub"><span class="up-arrow">▲</span> All 6 edge clusters online</div>
       </div>
       <div class="tele-card tc-2">
         <div class="tele-title">Estimated Live Impressions</div>
@@ -536,6 +536,42 @@
             </div>
           </div>
 
+          <!-- Site 6: Golden Triangle Cabs -->
+          <div class="site-row">
+            <div class="site-header">
+              <div class="site-title">
+                6. Golden Triangle Cabs (Intercity Taxi & Tours)
+                <span class="live-ping" id="ping-goldentriangle">Ping: checking...</span>
+              </div>
+              <span class="badge" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3);">Cloudflare Pages (39 Routes)</span>
+            </div>
+
+            <div class="progress-bar-wrap">
+              <div class="progress-labels">
+                <span class="progress-name">TaxiService & Regional Intercity Routing Schemas</span>
+                <span class="progress-score">95%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 95%; background: #f59e0b;"></div>
+              </div>
+            </div>
+
+            <div class="kw-rank-grid">
+              <div class="kw-pill">
+                <div class="kw-term">delhi to agra taxi fare fixed</div>
+                <div class="kw-stats"><span>Direct Lead</span> <span class="kw-pos">High Priority</span></div>
+              </div>
+              <div class="kw-pill">
+                <div class="kw-term">delhi agra jaipur tour package car</div>
+                <div class="kw-stats"><span>High Ticket</span> <span class="kw-pos">Rank #1 Target</span></div>
+              </div>
+              <div class="kw-pill">
+                <div class="kw-term">agra to jaipur one way cab</div>
+                <div class="kw-stats"><span>Intercity Route</span> <span class="kw-pos">WhatsApp Hook</span></div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -619,7 +655,8 @@
       measurePing('https://karakorum.onrender.com/robots.txt', 'ping-compression');
       measurePing('https://tajmahal.city/robots.txt', 'ping-tajmahal');
       measurePing('https://karakorum.pages.dev/robots.txt', 'ping-karakorum');
-      addLogEntry('System', 'All 5 live endpoints pinged and verified active.');
+      measurePing('https://goldentrianglecabs.pages.dev/robots.txt', 'ping-goldentriangle');
+      addLogEntry('System', 'All 6 live endpoints pinged and verified active.');
     }
 
     // Live Feed Stream Simulator

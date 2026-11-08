@@ -35,8 +35,9 @@ jobs:
               {"name": "Minimalist Quran", "url": "https://al-quraan.web.app/robots.txt", "ad": "Google AdSense (Auto Ads ON)", "kw": "quran app offline no ads, urdu audio"},
               {"name": "Satta Global", "url": "https://satta-global.netlify.app/sitemap.xml", "ad": "Display Ads / Adsterra Live", "kw": "satta global live, desawar chart 2026"},
               {"name": "Karakorum Compression Engine", "url": "https://karakorum.onrender.com/robots.txt", "ad": "Google AdSense Active (Go CLI)", "kw": "online file compressor free, lossless compression"},
-              {"name": "TajMahal.City", "url": "http://tajmahal.city/robots.txt", "ad": "Direct Foreign Tour Bookings (WhatsApp)", "kw": "sunrise taj mahal tour delhi, no scam tour"},
-              {"name": "Karakorum Social", "url": "https://karakorum.pages.dev/robots.txt", "ad": "Instagram Retainers & ₹50 Guide Funnel", "kw": "instagram management packages, reels creation"}
+              {"name": "TajMahal.City", "url": "https://tajmahal.city/robots.txt", "ad": "Direct Foreign Tour Bookings (WhatsApp)", "kw": "sunrise taj mahal tour delhi, no scam tour"},
+              {"name": "Karakorum Social", "url": "https://karakorum.pages.dev/robots.txt", "ad": "Instagram Retainers & ₹50 Guide Funnel", "kw": "instagram management packages, reels creation"},
+              {"name": "Golden Triangle Cabs", "url": "https://goldentrianglecabs.pages.dev/robots.txt", "ad": "Direct Intercity Cab Bookings (WhatsApp)", "kw": "delhi to agra taxi fare, jaipur cab service"}
           ]
 
           today = datetime.now().strftime("%d %b %Y")
