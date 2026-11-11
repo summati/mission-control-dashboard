@@ -39,10 +39,10 @@ jobs:
               {"site": "TajMahal.City", "kw": "licensed agra tour guide booking whatsapp", "rank": "#3", "delta": "▲ +2", "status": "Page 1 Top 3", "intent": "Direct WhatsApp Lead", "url": "https://tajmahal.city/agra-tour-guide/"},
               {"site": "TajMahal.City", "kw": "delhi to agra same day tour guide", "rank": "#8", "delta": "▲ NEW", "status": "Page 1 First Entry", "intent": "High Ticket Foreign ($60-$120)", "url": "https://tajmahal.city/delhi-to-agra-same-day-tour-guide/"},
               
-              # Golden Triangle Cabs
-              {"site": "Golden Triangle Cabs", "kw": "delhi to agra taxi fare fixed", "rank": "#6", "delta": "▲ NEW", "status": "Page 1 Top 10", "intent": "Direct Booking Lead", "url": "https://goldentrianglecabs.pages.dev/delhi-to-agra-taxi-fare/"},
-              {"site": "Golden Triangle Cabs", "kw": "agra to jaipur one way cab", "rank": "#5", "delta": "▲ NEW", "status": "Page 1 Top 5", "intent": "High Volume Intercity", "url": "https://goldentrianglecabs.pages.dev/taxi/agra-to-jaipur/"},
-              {"site": "Golden Triangle Cabs", "kw": "delhi agra jaipur tour package car", "rank": "#9", "delta": "▲ NEW", "status": "Page 1 Entry", "intent": "3-Day Package Inquiry", "url": "https://goldentrianglecabs.pages.dev/delhi-agra-jaipur-tour-package/"},
+              # Golden Triangle Cabs (Submitted Nov 8, In GSC Crawl Queue)
+              {"site": "Golden Triangle Cabs", "kw": "delhi to agra taxi fare fixed", "rank": "Queue", "delta": "Pending", "status": "GSC Crawl Queue (Submitted Nov 8)", "intent": "Direct Booking Lead", "url": "https://goldentrianglecabs.pages.dev/delhi-to-agra-taxi-fare/"},
+              {"site": "Golden Triangle Cabs", "kw": "agra to jaipur one way cab", "rank": "Queue", "delta": "Pending", "status": "GSC Crawl Queue (Submitted Nov 8)", "intent": "High Volume Intercity", "url": "https://goldentrianglecabs.pages.dev/taxi/agra-to-jaipur/"},
+              {"site": "Golden Triangle Cabs", "kw": "delhi agra jaipur tour package car", "rank": "Queue", "delta": "Pending", "status": "GSC Crawl Queue (Submitted Nov 8)", "intent": "3-Day Package Inquiry", "url": "https://goldentrianglecabs.pages.dev/delhi-agra-jaipur-tour-package/"},
               
               # Karakorum Social
               {"site": "Karakorum Growth", "kw": "why buying instagram followers destroys reach", "rank": "#3", "delta": "▲ +2", "status": "Page 1 Top 3", "intent": "Problem-Aware Viral", "url": "https://karakorum.pages.dev/why-buying-instagram-followers-destroys-reach/"},
